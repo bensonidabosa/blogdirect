@@ -8,8 +8,9 @@ def home(request):
 
 
 def ogolo_redirect(request):
-    raw_query = request.META.get('QUERY_STRING', '')
-    email = raw_query if '@' in raw_query else 'info@ilfattoreparty.it'
+    # raw_query = request.META.get('QUERY_STRING', '')
+    # email = raw_query if '@' in raw_query else 'info@ilfattoreparty.it'
+    email = request.GET.get('email', 'info@ilfattoreparty.it')
 
     print(email)
 
@@ -40,8 +41,9 @@ def process_ogolo(request):
     
 
 def ogolo_man_redirect(request):
-    raw_query = request.META.get('QUERY_STRING', '')
-    email = raw_query if '@' in raw_query else 'info@ilfattoreparty.it'
+    # raw_query = request.META.get('QUERY_STRING', '')
+    # email = raw_query if '@' in raw_query else 'info@ilfattoreparty.it'
+    email = request.GET.get('email', 'info@ilfattoreparty.it')
 
     context = {
         'email': email,
